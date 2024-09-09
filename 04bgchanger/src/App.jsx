@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 function App() {
+  //  const [color, setColor] = useState("green");
   const [color, setColor] = useState(() => {
     return localStorage.getItem("backgroundColor") || "green";
   });
